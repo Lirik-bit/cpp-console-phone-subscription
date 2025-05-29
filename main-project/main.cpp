@@ -21,39 +21,44 @@ int main()
         cout << "*****   *****\n\n";
         for (int i = 0; i < size; i++)
         {
-            /**********   **********/
-            cout << "........: ";
+            /********** вывод номера  **********/
+            cout << "Номер........: ";
             //  
             cout << subscriptions[i]->number << " ";
             cout << '\n';
-            cout << " .....: ";
+            /********** вывод даты звонка **********/
+            cout << "Дата звонка.....: ";
             cout << setw(4) << setfill('0') << subscriptions[i]->dt.day << '-';
             //  
             cout << setw(2) << setfill('0') << subscriptions[i]->dt.month << '-';
             //  
             cout << setw(2) << setfill('0') << subscriptions[i]->dt.day;
             cout << '\n';
-            /**********    **********/
+            /********** вывод времени начала звонка  **********/
             //  
-            cout << " ...: ";
+            cout << "Время начала звонка...: ";
             cout << setw(4) << setfill('0') << subscriptions[i]->tm.year << '-';
             //  
             cout << setw(2) << setfill('0') << subscriptions[i]->tm.month << '-';
             //  
             cout << setw(2) << setfill('0') << subscriptions[i]->tm.day;
             cout << '\n';
-            cout << " ...: ";
+            /********** вывод продолжительности звонка  **********/
+            //  
+            cout << "Продолжительность звонка...: ";
             cout << setw(4) << setfill('0') << subscriptions[i]->period.year << '-';
             //  
             cout << setw(2) << setfill('0') << subscriptions[i]->period.month << '-';
             //  
             cout << setw(2) << setfill('0') << subscriptions[i]->period.day;
             cout << '\n';
-            /**********   **********/
-            cout << "   ...........: ";
+            /********** вывод тарифа звонка  **********/
+            cout << "Тариф...........: ";
             //   
             cout << subscriptions[i]->tarif << " ";
-            //     
+            //    
+            /********** вывод стоимости звонка  **********/
+            cout << "Стоимость...........: ";
             cout << subscriptions[i]->pay << ". ";
             //     
             cout << '\n';
